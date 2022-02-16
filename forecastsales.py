@@ -30,10 +30,10 @@ print( "\n" )
 
 conn_str = (
     r'DRIVER={SQL Server};'
-    r'SERVER=IN2NPDVDCOM01;'
-    r'UID=sa;'
-    r'PWD=Ate@m2013;'
-    r'DATABASE=EP20132X;'
+    r'SERVER=XXXXXX;'
+    r'UID=XX;'
+    r'PWD=XXXXXXXX;'
+    r'DATABASE=XXXXXXXXX;'
     r'Trusted_Connection=no;'
 )
 learn_df = pd.read_sql("select * from PREDICTIONS", pyodbc.connect(conn_str))
